@@ -9,9 +9,13 @@ const todos=[
 const todosModel={
     // function calls which we are required to do for todos
     getAllTodo: ()=>{
-        return todos
+        return todos;
+    },
+    getTodoById: (id)=>{
+        if(todos.id===id){
+            return todos.id;
+        }
     }
-
 }
 
 export default todosModel;
