@@ -15,6 +15,22 @@ const todosModel={
         if(find(todos.id)===id){
             return todos.id;
         }
+    },
+    createNewTodo: (title,description)=>{
+        const newTodo =
+            {
+                title,
+                description
+            }
+            return newTodo;
+    },
+    updateTodo: (id,title,description,completed)=>{
+        const update={};
+        if(find(todos.id)===id){
+            return update={
+            
+        }
+    } 
     }
 }
 

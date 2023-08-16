@@ -9,6 +9,11 @@ const todoController={
     getTodoById: (req,res)=>{
         const todosID = todosModel.getTodoById(req.params.id);
         return res.json(todosID);
+    },
+    createNewTodo: (req,res)=>{
+        const todoTitle=todosModel.createNewTodo(req.params.title);
+        const todoDescription= todosModel.createNewTodo(req.params.description)
+        return res.json(todoTitle,todoDescription);
     }
 
 };
