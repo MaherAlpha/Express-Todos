@@ -7,7 +7,7 @@ const todoController={
         return res.json(todos);
     },
     getTodoById: (req,res)=>{
-        const todosID = todosModel.getTodoById();
+        const todosID = todosModel.getTodoById(req.params.id);
         return res.json(todosID);
     }
 

@@ -12,7 +12,7 @@ const todosModel={
         return todos;
     },
     getTodoById: (id)=>{
-        if(todos.id===id){
+        if(find(todos.id)===id){
             return todos.id;
         }
     }
